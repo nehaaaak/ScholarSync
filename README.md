@@ -65,6 +65,7 @@ Built to streamline academic research workflows, with a **FastAPI backend**, **S
 
 ## 🏗️ Architecture Overview
 
+```text
 Streamlit UI
 ↓
 FastAPI Backend
@@ -78,6 +79,7 @@ Gemini LLM (RAG)
 LangFlow (Summarization Orchestration)
 ↓
 Notion API (Knowledge Base)
+```
 
 ---
 
@@ -102,6 +104,7 @@ pip install -r requirements.txt
 
 ### 4. Environment Variables
 Create a .env file:
+```env
 GOOGLE_API_KEY=your_gemini_api_key
 QDRANT_URL=your_qdrant_url
 QDRANT_API_KEY=your_qdrant_api_key
@@ -109,6 +112,7 @@ NOTION_API_KEY=your_notion_key
 NOTION_DATABASE_ID=your_database_id
 LANGFLOW_URL=http://localhost:7860
 LANGFLOW_FLOW_ID=your_flow_id
+```
 
 ### 5. Run Backend
 ```bash
