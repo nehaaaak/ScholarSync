@@ -5,6 +5,60 @@ ScholarSync is a full-stack **AI research assistant** that helps users discover 
 
 Built to streamline academic research workflows, with a **FastAPI backend**, **Streamlit frontend**, using modern GenAI tooling.
 
+## 🎯 Why I Built This
+
+While working on my final year project, I found myself spending a lot of time searching across multiple research platforms, downloading papers, and trying to understand lengthy research articles. The process was fragmented and time-consuming, especially when I wanted quick answers or summaries before deciding whether a paper was relevant.
+
+I built ScholarSync to simplify this workflow by bringing paper discovery, semantic search, AI-powered Q&A, and structured summaries into a single application. It also became my first end-to-end GenAI project, where I explored how Retrieval-Augmented Generation (RAG) could be integrated into a practical application rather than building a standalone chatbot.
+
+
+## 👨‍💻 My Contribution
+
+ScholarSync was developed as an individual project.
+
+I was responsible for designing and implementing the complete application, including:
+
+* Developing the FastAPI backend and Streamlit frontend.
+* Building the complete RAG pipeline, from PDF ingestion and chunking to embedding generation and semantic retrieval using Qdrant.
+* Integrating Google Gemini for research Q&A and AI-generated summaries.
+* Designing LangFlow workflows to automate paper summarization and export structured outputs to Notion.
+* Integrating multiple external APIs, including arXiv, Semantic Scholar, PapersWithCode, Qdrant Cloud, and Notion.
+* Optimizing the application for free-tier LLM usage by experimenting with chunking strategies, prompt design, and token usage.
+
+This project became my first complete AI application, where I learned how different GenAI components work together to solve a real-world problem.
+
+
+## ⚡ Challenges & Key Learnings
+
+Building ScholarSync involved much more than integrating an LLM.
+
+### Challenges
+
+* Designing the Retrieval-Augmented Generation (RAG) pipeline required understanding how document chunking, embeddings, vector search, and prompt construction affect the quality of retrieved information.
+* Integrating multiple external services such as Qdrant, Gemini, LangFlow, Notion, and research paper APIs meant working with different request formats, and error handling while keeping the workflow reliable.
+* Automating Notion exports was more challenging than expected because the generated JSON had to exactly match the database schema and property structure expected by the Notion API.
+* Optimizing the application for free-tier LLM usage required experimenting with chunk sizes, prompt design, and token usage to balance response quality, latency, and API limits.
+
+### What I Learned
+
+Working on ScholarSync gave me my first practical experience building an end-to-end AI application rather than an isolated AI feature.
+
+Some of my key learnings include:
+
+* Built and understood a complete RAG pipeline, including document ingestion, chunking, embeddings, semantic retrieval, and context-aware prompting.
+* Learned how vector databases like Qdrant improve information retrieval compared to keyword search.
+* Gained practical experience integrating LLMs into backend applications while dealing with latency, token limits, and API constraints.
+* Understood the importance of retrieval quality, evaluation, modular architecture, and production considerations while building AI systems.
+
+This project also highlighted several areas for improvement, including retrieval evaluation, multi-user support, and a more modular backend architecture. I am currently redesigning the project with these improvements in mind.
+
+---
+
+**📢 Project Status**
+
+This repository contains the original version of ScholarSync, which was built as my first end-to-end GenAI application. While it demonstrates the core ideas behind the project, I identified several areas for improvement as I gained more experience with AI engineering.
+I am currently developing a completely redesigned version with a more modular architecture, improved RAG pipeline, multi-user support, better retrieval quality, and additional production-oriented features. Since these changes require a significant redesign, the new implementation is being developed in a separate repository.
+
 ---
 
 ## ✨ Key Features
